@@ -51,15 +51,46 @@
     font-size: $paragraphsSize;
   }
 }
-@media(max-width: 375px){
+@media (max-width: 850px) {
   .headerTop{
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 650px) {
+  .headerTop {
     width: 100%;
     position: absolute;
-    padding: 30px 20px;
     top: 0;
     left: 0;
     z-index: 10;
     background-color: transparent;
+
+    svg {
+      width: 200px;
+      path {
+        fill: $white;
+        stroke: $white;
+      }
+    }
+    .burger{
+      .burger__line{
+        background-color: $white;
+      }
+    }
+  }
+  .headerBottom{
+    h1{
+      text-align: center;
+      font-size: 48px;
+    }
+    p{
+      max-width: 400px;
+      font-size: 14px;
+    }
+  }
+}
+@media(max-width: 375px){
+  .headerTop{
     svg{
       width: 170px;
       path{

@@ -34,6 +34,36 @@
  }
 
 }
+@media (max-width: 1000px) {
+  .aboutUs{
+    &__text{
+      .aboutUs__textParagraph{
+        line-height: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+
+}
+@media (max-width: 850px) {
+  .aboutUs{
+    flex-direction: column;
+    &__text{
+      .aboutUs__textParagraph{
+        line-height: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .aboutUs{
+    flex-direction: column;
+    img{
+      width: 120%;
+    }
+  }
+}
 @media (max-width: 375px) {
   .aboutUs{
     flex-direction: column;
