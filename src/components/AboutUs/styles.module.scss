@@ -1,0 +1,47 @@
+@import '/src/styles/vars';
+
+.aboutUs{
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  gap:50px;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    filter: drop-shadow(9px 9px 12px rgba(0, 0, 0, 0.19));
+  }
+ &__text{
+    h4{
+      margin-bottom: 32px;
+      font-weight: normal;
+      color: $gray;
+      font-size: $titlesSize;
+    }
+   .aboutUs__textParagraph{
+      margin-bottom: 24px;
+      font-weight: normal;
+      font-family: $openSans;
+      font-size: $paragraphsSize;
+      color: $black;
+      line-height: 32px;
+      max-width: 900px;
+    }
+   h5{
+     font-weight: normal;
+     font-size: $btnSize;
+     color: $gray;
+   }
+ }
+
+}
+@media (max-width: 375px) {
+  .aboutUs{
+    flex-direction: column;
+    img{
+      width: 100%;
+    }
+  }
+  .aboutUs__textParagraph{
+    max-width: 100%;
+  }
+}
