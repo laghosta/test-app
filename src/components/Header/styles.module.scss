@@ -93,19 +93,8 @@
   .headerTop{
     svg{
       width: 170px;
-      path{
-        fill:$white;
-        stroke:$white;
-      }
-    }
-    .burger{
-      .burger__line{
-        background-color: $white;
-      }
     }
   }
-
-
   .headerBottom{
     padding: 250px 0 ;
     height: 800px;
